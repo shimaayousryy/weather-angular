@@ -1,0 +1,65 @@
+.home{
+    background-image: url('../../../assets/images/bghome.png');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 90vh;
+    position: relative;
+    padding: 50px 0;
+}
+input {
+    border: 1px solid rgb(187, 179, 179);
+    border-radius: 50px;
+}
+button{
+    border-radius: 50px;
+    color: white;
+    background-color: #029ed9;
+}
+.content{
+    background-image: url('../../../assets/images/draw1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+  
+
+}
+.layer{
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    height: 100%;
+}
+.location{
+    background-color: rgba(0,0,0,0.54);
+    color: #029ed9;
+    padding: 5px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.deg , .about{
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.4);
+}
+p {
+    color: #fff;
+    font-weight: bold;
+}
+p span{
+    color: #029ed9;
+}
+
+.deg{
+    text-align: center;
+}
+.about{
+    width: 100%;
+    height: 100%;
+}
+.time-forcast{
+    background-color: rgba(0,0,0,0.3);
+
+}
+.fa-cloud{
+    color: #029ed9;
+}

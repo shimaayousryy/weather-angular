@@ -1,0 +1,59 @@
+<section class="home">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-10 m-auto ">
+               <div class="d-flex">
+                <input type="text" class="form-control py-2" placeholder="Enter your Location"
+                [(ngModel)] = "cityname">
+                <button class="btn" (click) = "findCity(cityname)">check</button>
+                <!-- <h2>{{cityname}}</h2> -->
+              
+               </div>
+            </div>
+
+  
+            <div class="col-md-10 m-auto mt-5" >
+                <div class="content shadow rounded">
+                    <div class="layer ">
+                      
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <div class="location text-center">
+                                        <h2>{{loc}}</h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="about text-center">
+                                        <h5 class="text-white my-3">{{dt  | date: 'EEE dd MMM'}} </h5>
+                                        <i class="fas fa-cloud fa-2x mb-2"></i>
+                                        <p><span>{{desc}} </span></p>
+                             
+                                     
+                                 
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="deg text-white">
+                                        <p>temp : <span data-deg="°" >{{temp}} ℃</span> </p>
+                                        <p>humidity : <span>{{humidity}}%</span></p>
+                                        <p>wind : <span> {{wind}} meter/sec </span></p>
+                                        <p>pressure : <span>{{pressure}} mmHg</span></p>
+                                    </div>
+                                </div>
+                              
+                            </div>
+
+
+
+                    
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

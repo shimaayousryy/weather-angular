@@ -1,0 +1,52 @@
+
+
+
+<section class="details">
+   <div class="container">
+       <div class="row">
+
+           <div class="col-md-10 m-auto ">
+              <div class="d-flex">
+               <input type="text" class="form-control py-2" placeholder="Enter your Location"
+               [(ngModel)] = "cityname">
+               <input type="text" class="form-control py-2" placeholder="Enter numder of days"
+               [(ngModel)] = "daysWeather">
+           
+               <button class="btn" (click) = "getALLWeather(cityname , daysWeather)">check</button>
+             
+              </div>
+           </div>
+
+ 
+           <div class="col-md-10 m-auto mt-5" >
+               <div class="content shadow rounded">
+                   <div class="layer py-5">
+                     
+                     <div class="container">
+                        <div class="row  time-forcast">
+                           <div class="col-md-12 m-auto">
+                              <div class="text-center">
+                                 <h3 class="text-white pb-5">{{name}}</h3>
+                              </div>
+                           </div>
+                           <div class="col-md-2 mt-3" *ngFor = "let item of productList">
+                              <div class="text-center bg-light shadow py-2 rounded">
+                               <p>{{item.dt | date: 'EEE dd MMM'}} </p>
+                               <p class="my-2"> temp : <span>{{item.main.temp }}</span> f </p>
+                               <p>humidity : <span>{{item.main.humidity }}</span></p>
+                              </div>
+                           </div>
+               
+                       
+                           
+                       </div>
+               
+                     </div>
+                  
+
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
